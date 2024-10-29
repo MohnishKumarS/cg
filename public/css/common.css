@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Wendy+One&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+@media (max-width:991px) {
+    section {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width:576px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
+.text-main {
+    color: #a61d31;
+}
+
+
+/* title */
+.cg-title {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #a61d31;
+}
+
+.cg-head {
+    font-size: calc(1.4rem + .9vw);
+    font-weight: 700;
+    color: #343f52;
+    margin-bottom: 40px;
+}
+
+.cg-head-lined {
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        background: url('../image/under-line.svg')no-repeat bottom;
+        background-size: 100% 100%;
+        position: absolute;
+        left: 50%;
+        bottom: -15%;
+        transform: translateX(-50%);
+        width: 110%;
+        height: 10px;
+    }
+}
+
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #a61d31;
+}
+
+.pbs-10 {
+    padding-bottom: 100px;
+}
+
+@media (max-width:991px) {
+    .pbs-10 {
+        padding-bottom: 50px;
+    }
+}
+
+
+/* btm */
+.btn-main {
+    background: #002a5c;
+    border: 1px solid #002a5c;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+
+.btn-main:hover,
+.btn-main:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #002a5c;
+}
+
+.btn-main:active {
+    opacity: .5;
+}
+
+/* faq */
+.accordion {
+    max-width: 700px;
+    margin: auto;
+}
+
+.accordion-button {
+    font-weight: 600;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #002a5c;
+    background-color: #e5e5e5;
+}
+
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #a61d31;
+}
