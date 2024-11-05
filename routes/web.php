@@ -20,7 +20,7 @@ use App\Http\Controllers\Admin\PortfolioGalleryController;
 */
 
 
-Route::view('/', 'index');
+Route::view('/', 'index'); 
 Route::view('contact', 'contact');
 Route::view('services', 'services');
 
